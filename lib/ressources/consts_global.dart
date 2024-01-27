@@ -36,7 +36,7 @@ const styleTextResumeCartDeVisite = TextStyle(
 
 const circleAvatar = CircleAvatar(
   radius: 70.0,
-  backgroundImage: AssetImage('assets/alexandre.jpeg'),
+  backgroundImage: AssetImage('assets/images/alexandre.jpeg'),
 );
 const iconEmail = Icon(
   Icons.email,

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:ma_carte_de_visite/screens/components/appbar_component.dart';
+import 'package:ma_carte_de_visite/screens/components/drawer_component.dart';
 import 'package:ma_carte_de_visite/screens/detaills.dart';
 import 'package:ma_carte_de_visite/screens/visit.card.dart';
 import '../ressources/consts_global.dart';
@@ -8,7 +10,8 @@ class VisitCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: bacgroundColor,
+      drawer: DrawerComponent(),
+      /*backgroundColor: bacgroundColor,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         title: Text(
@@ -19,12 +22,57 @@ class VisitCard extends StatelessWidget {
           ),
         ),
         elevation: 0.0,
-      ),
+      ),*/
       body: _buildBody(context),
     );
   }
 
-   Widget _buildBody(BuildContext context){
+  Widget _buildBody(BuildContext context) {
+    return CustomScrollView(
+      slivers: <Widget>[
+        SliverAppBarComponent(),
+        SliverList.list(children: <Widget>[
+          Text(
+            'Hello world!',
+            style: TextStyle(fontSize: 80.0),
+          ),
+          Text(
+            'Hello world!',
+            style: TextStyle(fontSize: 80.0),
+          ),
+          Text(
+            'Hello world!',
+            style: TextStyle(fontSize: 80.0),
+          ),
+          Text(
+            'Hello world!',
+            style: TextStyle(fontSize: 80.0),
+          ),
+          Text(
+            'Hello world!',
+            style: TextStyle(fontSize: 80.0),
+          ),
+          Text(
+            'Hello world!',
+            style: TextStyle(fontSize: 80.0),
+          ),
+          Text(
+            'Hello world!',
+            style: TextStyle(fontSize: 80.0),
+          ),
+          Text(
+            'Hello world!',
+            style: TextStyle(fontSize: 80.0),
+          ),
+          Text(
+            'Hello world!',
+            style: TextStyle(fontSize: 80.0),
+          )
+        ])
+      ],
+    );
+  }
+  /*Widget _buildBody(BuildContext context){
         return Center(
         child: Padding(
           padding: const EdgeInsets.all(15.0),
@@ -77,5 +125,5 @@ class VisitCard extends StatelessWidget {
           ),
         ),
       );
-    }
+    }*/
 }
