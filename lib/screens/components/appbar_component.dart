@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:ma_carte_de_visite/ressources/consts_global.dart';
 
 class SliverAppBarComponent extends StatelessWidget {
@@ -17,10 +18,12 @@ class SliverAppBarComponent extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text('Ingenieur en informatique',
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 20.0,
-                        fontFamily: 'josefinSans')),
+                    style: GoogleFonts.oxanium(
+                        textStyle: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20.0,
+                        )
+                    )),
               ),
             ),
             /*Positioned(

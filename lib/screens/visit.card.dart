@@ -32,59 +32,8 @@ class VisitCard extends StatelessWidget {
       slivers: <Widget>[
         SliverAppBarComponent(),
         SliverList.list(children: <Widget>[
-          Text(
-            'Hello world!',
-            style: TextStyle(fontSize: 80.0),
-          ),
-          Text(
-            'Hello world!',
-            style: TextStyle(fontSize: 80.0),
-          ),
-          Text(
-            'Hello world!',
-            style: TextStyle(fontSize: 80.0),
-          ),
-          Text(
-            'Hello world!',
-            style: TextStyle(fontSize: 80.0),
-          ),
-          Text(
-            'Hello world!',
-            style: TextStyle(fontSize: 80.0),
-          ),
-          Text(
-            'Hello world!',
-            style: TextStyle(fontSize: 80.0),
-          ),
-          Text(
-            'Hello world!',
-            style: TextStyle(fontSize: 80.0),
-          ),
-          Text(
-            'Hello world!',
-            style: TextStyle(fontSize: 80.0),
-          ),
-          Text(
-            'Hello world!',
-            style: TextStyle(fontSize: 80.0),
-          )
-        ])
-      ],
-    );
-  }
-  /*Widget _buildBody(BuildContext context){
-        return Center(
-        child: Padding(
-          padding: const EdgeInsets.all(15.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              circleAvatar,
-              SizedBox(
-                height: 10.0,
-              ),
-              Card(
-                color: Colors.transparent,
+          Card(
+                color: Colors.blue[900],
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
@@ -94,36 +43,18 @@ class VisitCard extends StatelessWidget {
                 ),
               ),
               Card(
-                color: Colors.transparent,
+                color: Colors.blue[900],
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    descriptionCartDeVisite,
+                    textResumeCartDeVisite,
                     textAlign: TextAlign.center,
                     style: styleDescriptionCartDeVisite,
                   ),
                 ),
               ),
-              SizedBox(
-                height: 50.0,
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return Detaills();
-                  }));
-                },
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text(
-                    textButtonCartDeVisite,
-                    style: styleTextButtonCartDeVisite,
-                  ),
-                ),
-              )
-            ],
-          ),
-        ),
-      );
-    }*/
+        ])
+      ],
+    );
+  }
 }
