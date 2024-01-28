@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ma_carte_de_visite/screens/visit.card.dart';
+import 'package:ma_carte_de_visite/screens/visit.card_screen.dart';
 
 void main() => runApp(MyApp());
 

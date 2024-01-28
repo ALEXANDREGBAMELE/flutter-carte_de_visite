@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:ma_carte_de_visite/screens/components/appbar_component.dart';
 import 'package:ma_carte_de_visite/screens/components/drawer_component.dart';
-import 'package:ma_carte_de_visite/screens/detaills.dart';
-import 'package:ma_carte_de_visite/screens/visit.card.dart';
+import 'package:ma_carte_de_visite/screens/detaills_screen.dart';
+import 'package:ma_carte_de_visite/screens/visit.card_screen.dart';
 import '../ressources/consts_global.dart';
 
 class VisitCard extends StatelessWidget {
