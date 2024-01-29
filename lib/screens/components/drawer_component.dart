@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:ma_carte_de_visite/screens/portefolio_screen.dart';
+import 'package:ma_carte_de_visite/screens/visit.card_screen.dart';
 
 class DrawerComponent extends StatelessWidget {
   @override
@@ -14,7 +16,17 @@ class DrawerComponent extends StatelessWidget {
           ),
           Expanded(
               child: ListView(
-            children: <Widget>[Text('Accueil'), Text('Portefolio')],
+            children: <Widget>[
+              ListTile(title: Text('Accueil', style: TextStyle(fontSize: 18,),
+              ),
+              onTap: ()=> Navigator.push(context, MaterialPageRoute(builder: (context)=> VisitCard())),
+              ),
+              
+              ListTile(title: Text('Portefolio', style: TextStyle(fontSize: 18,),
+              ),
+              onTap: ()=> Navigator.push(context, MaterialPageRoute(builder: (context)=> PortefolioScreen())),
+              )
+              ],
           ))
         ],
       ),

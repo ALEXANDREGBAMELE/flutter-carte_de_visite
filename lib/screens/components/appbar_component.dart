@@ -10,9 +10,9 @@ class SliverAppBarComponent extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.white),
         backgroundColor: bacgroundColor,
         expandedHeight: 200.0,
-        flexibleSpace: FlexibleSpaceBar(
-            background: Container(
-          child: Stack(children: <Widget>[
+        flexibleSpace: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
             Container(
               alignment: Alignment.centerRight,
               child: Padding(
@@ -26,18 +26,10 @@ class SliverAppBarComponent extends StatelessWidget {
                     )),
               ),
             ),
-            /*Positioned(
-                top: 0,
-                right: 0,
-                bottom: 0,
-                child: Image.asset(
-                  'assets/images/beau-jeune-afro-americain-tshirt-polo-rose-fococlipping-standard.png',
-                ),
-              ),*/
             Image.asset(
               'assets/images/beau-jeune-afro-americain-tshirt-polo-rose-fococlipping-standard.png',
             ),
           ]),
-        )));
+        );
   }
 }
